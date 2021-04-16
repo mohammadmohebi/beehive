@@ -1,7 +1,8 @@
 package sort
 
 func Selection(data []int) []int {
-	d := data
+	d := make([]int, len(data))
+	copy(d, data)
 	for i := 0; i < len(d); i++ {
 		x, y := i, i
 		for j := i + 1; j < len(d); j++ {

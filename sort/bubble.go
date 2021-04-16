@@ -1,7 +1,8 @@
 package sort
 
 func Bubble(data []int) []int {
-	d := data
+	d := make([]int, len(data))
+	copy(d, data)
 	c := 0
 	done := false
 	for !done && c < len(d) {
